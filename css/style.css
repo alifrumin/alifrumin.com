@@ -74,6 +74,7 @@ html, body {
     font-size: 25px;
     background: rgba(24, 72, 203, .5);
     font-weight: bold;
+    pointer-events: none;
 }
 
 p {
