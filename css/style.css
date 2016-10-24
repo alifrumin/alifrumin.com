@@ -13,7 +13,7 @@
   transform: translate(-50%, -50%);
   line-height: 200px;
   white-space: nowrap;
-  animation: pulse 10s infinite;
+  animation: pulse 5s infinite;
 }
 
 @keyframes pulse {
@@ -27,6 +27,14 @@
   }
 }
 
+@keyframes text {
+  0%, 100% {
+    color: #FFC300;
+  }
+  50% {
+    color: #FF5733;
+  }
+}
 html, body {
   height:100%;
   margin:0;
@@ -34,7 +42,7 @@ html, body {
 }
 
 
-.container {
+.sunset {
   height:100%;
   display: flex;
   position: relative;
@@ -79,4 +87,44 @@ html, body {
 
 p {
   text-align: center;
+}
+
+.wood {
+  height:100%;
+  display: flex;
+  position: relative;
+  background-image: url("../img/wood2.jpg");
+  background-size: cover;
+}
+nav {
+  background-color: orange;
+  display: inline-block;
+}
+
+.container {
+      width: 100%; /*can be in percentage also.*/
+      height: 100%;
+      margin: 0 auto;
+      padding: 10px;
+      position: relative;
+text-align: center;
+
+}
+.dcflag {
+  position: relative;
+  width: 7em;
+  height: 7em;
+  display: inline-block;
+  -webkit-mask: url("../img/dcflag.svg") no-repeat 50% 50%;
+ mask: url("../img/dcflag.svg") no-repeat 50% 50%;
+ -webkit-mask-size: cover;
+ mask-size: cover;
+ animation: pulse 5s infinite;
+ margin-top: 10%;
+  vertical-align: center;
+}
+
+.message {
+display: block;
+animation: text 5s infinite;
 }
