@@ -128,3 +128,20 @@ text-align: center;
 display: block;
 animation: text 5s infinite;
 }
+
+.diag {
+  background-color: #013A6B;
+  background: linear-gradient(to right bottom, red 50%, black 50%);
+  color: linear-gradient(to right bottom, black 50%, red 50%);
+
+}
+
+.text {
+  height: 100%;
+  width: 100%;
+  /*margin: 0;*/
+  font-size: 20px;
+  background: linear-gradient(to right bottom, black 50%, red 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
